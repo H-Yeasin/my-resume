@@ -3,7 +3,7 @@
 % ----- Minimal, Overleaf-safe packages -----
 \usepackage[
   ignoreheadfoot,
-  top=1.6cm, bottom=1.6cm, left=1.6cm, right=1.6cm,
+  top=1.4cm, bottom=1.4cm, left=1.5cm, right=1.5cm,
   footskip=0.6cm
 ]{geometry}
 \usepackage{titlesec}
@@ -33,12 +33,12 @@
 
 % ----- Personal Info -----
 \newcommand{\Name}{Md. Habib Ullah Yeasin}
-\newcommand{\Role}{Flutter Developer}
+\newcommand{\Role}{Flutter Developer \textbar{} Full-Stack Mobile Engineer}
 \newcommand{\Location}{Zam Zam Tower, Mohakhali, Banani, Dhaka, Bangladesh}
 \newcommand{\Email}{habibullahyeasin@outlook.com}
 \newcommand{\Phone}{+880 1303 219937}
 \newcommand{\LinkedIn}{https://linkedin.com/in/md-habib-ullah-yeasin}
-\newcommand{\GitHub}{https://github.com/Yeasin84} 
+\newcommand{\GitHub}{https://github.com/H-Yeasin}
 
 \begin{document}
 
@@ -60,48 +60,136 @@
 
 % ======================= SUMMARY =======================
 \section{Professional Summary}
-Results-driven Flutter Developer with \textbf{1+ years of practical experience} in building high-performance, cross-platform mobile applications. Proficient in \textbf{Dart}, \textbf{Flutter framework}, and \textbf{modern mobile architecture}. Expert in REST \textbf{API integration}, \textbf{JSON handling}, and complex state management using \textbf{Provider and Riverpod}. Passionate about collaborating with designers to implement pixel-perfect UI/UX and thriving in fast-paced production environments.
+Results-driven Flutter Developer with \textbf{1+ years of practical experience} shipping \textbf{high-performance, cross-platform mobile applications} to the Google Play Store and Apple App Store (\textbf{4 apps live on Play, 2 on the App Store}). Full-stack capable: builds and connects \textbf{Flutter clients}, \textbf{Node.js/TypeScript backends}, and \textbf{React admin dashboards} sharing unified auth, real-time, and notification infrastructure. Expert in \textbf{REST API integration}, \textbf{WebSocket/real-time architecture (Socket.IO, Agora RTC)}, complex state management (\textbf{Bloc/Cubit, Riverpod, Provider, GetX}), and \textbf{payment/subscription systems (Stripe, PayPal, RevenueCat)}. Passionate about pixel-perfect UI/UX and thriving in fast-paced production environments.
 \vspace{5pt}
 
 % ======================== SKILLS =========================
 \section{Technical Skills}
 \noindent
-\textbf{Mobile Development:} Flutter, Dart, Android (Native Integration), iOS (Basic) \\[2pt]
-\textbf{State Management:} Provider, Riverpod, GetX (Advanced), Async Programming (Futures/Streams) \\[2pt]
-\textbf{Architecture:} Clean Architecture, MVC, MVVM, Dependency Injection \\[2pt]
-\textbf{Backend \& API:} REST APIs, JSON Parsing, \textbf{Firebase (Auth, Firestore}, FCM, Storage) \\[2pt]
-% --- UPDATED LINE BELOW ---
-\textbf{Tools \& DevOps:} Git, GitHub, \textbf{GitHub Actions (CI/CD)}, VS Code, Android Studio, \textbf{Postman (Certified)}, Figma
+\textbf{Languages:} Dart, TypeScript, JavaScript (Node.js), SQL, C++ \\[2pt]
+\textbf{Mobile Development:} Flutter (Android + iOS), Android (Native Integration), iOS (CallKit, PushKit, App Attest, Podfile/SPM troubleshooting), Deep Linking / Universal Links, Responsive UI (flutter\_screenutil), i18n (ARB, 4 languages; custom FR/EN), Offline-first (sqflite, Hive), PDF pipeline (pdf, printing, flutter\_pdfview), Image capture/compression \\[2pt]
+\textbf{State Management:} Bloc/Cubit (flutter\_bloc, 20+ modules), Riverpod (code-generated providers), Provider/ChangeNotifier, GetX (Advanced), Async Programming (Futures/Streams) \\[2pt]
+\textbf{Architecture:} Clean Architecture (data/domain/presentation), MVC, MVVM, Dependency Injection (get\_it), Singleton services, Functional error handling (dartz \texttt{Either<Failure,T>}), Model/Entity boundaries, Modular domain-driven backend design \\[2pt]
+\textbf{Backend \& API:} Node.js (Node 22, ES modules), Express.js, REST APIs, Socket.IO (client + server, JWT-authenticated middleware), Swagger docs, Zod / Joi / class-validator, freezed + json\_serializable, Dio (interceptors, token refresh, retry/backoff), cron jobs (node-schedule), log4js structured logging \\[2pt]
+\textbf{Databases \& Storage:} MongoDB/Mongoose, Firebase Firestore (+ Security Rules), Redis (caching, rate limiting), SQLite, Hive, AWS S3, Cloudinary, Firebase Cloud Storage, flutter\_secure\_storage \\[2pt]
+\textbf{Firebase Suite:} Auth, Firestore, Cloud Functions, Cloud Storage, FCM, App Check (Play Integrity / App Attest), Secrets Manager, Admin SDK \\[2pt]
+\textbf{Auth \& Security:} JWT (access/refresh rotation), bcrypt, custom OTP 2FA (salted SHA-256, rate limiting), Google Sign-In, Sign in with Apple, RBAC, biometric auth + PIN lock + session auto-lock, RSA/AES client-side encryption (encrypt, pointycastle), GDPR cascading deletion, CORS allow-listing \\[2pt]
+\textbf{Real-Time \& VoIP:} Agora RTC (1:1 + group audio/video), CallKit + PushKit (iOS), FCM/APNs multi-state push pipeline, full-screen intent call UX (Android) \\[2pt]
+\textbf{Payments \& Monetization:} Stripe (PaymentIntents, SetupIntents, webhooks), PayPal (create/capture, webhooks), RevenueCat (dual-sync entitlements), Google Mobile Ads (5 formats), in\_app\_purchase \\[2pt]
+\textbf{Maps \& Geospatial:} Google Maps, flutter\_map + OpenStreetMap (custom tile provider), geocoding, Haversine ranking, geohashing proximity queries \\[2pt]
+\textbf{Web Frontend:} React 18, Vite, Tailwind CSS v4, Recharts, Leaflet, service-worker push, socket-driven live updates \\[2pt]
+\textbf{Testing \& Quality:} bloc\_test, mocktail, flutter\_test, Play Store permission auditing \\[2pt]
+\textbf{Tools \& DevOps:} Git, GitHub, \textbf{GitHub Actions (CI/CD)}, VS Code, Android Studio, \textbf{Postman (Certified)}, Figma, Firebase CLI, Vercel, flutter\_dotenv
 
 \vspace{5pt}
 
 % ======================== PROJECTS =========================
 \section{Key Projects}
 
-% --- Project 1 (The EdTech Match) ---
-\textbf{Language Learning App} $|$ \textit{EdTech Platform}
-\hfill \href{https://github.com/Yeasin84/Language_Learning_APP.git}
-{\textcolor{myblue}{\faGithub}}\\
-\textit{Interactive educational app focusing on vocabulary and grammar exercises.}
+% --- Project 1: Messenger ---
+\textbf{Two One Two Messenger} $|$ \textit{Real-Time Messaging \& VoIP App (Flutter + Node.js)}
+\hfill
+\href{https://play.google.com/store/apps/details?id=com.freshcodes.twoonetwomessenger}{\textcolor{myblue}{\faGooglePlay}}\\
+\textit{Production messaging platform with chat, group/1:1 voice \& video calling, built end-to-end.}
 \begin{highlights}
-  \item \textbf{Educational Logic:} Developed interactive quizzes and progress tracking features similar to modern LMS platforms.
-  \item \textbf{State Management:} Utilized \textbf{Riverpod} to manage user sessions, quiz scores, and daily learning streaks efficiently.
-  \item \textbf{UI/UX:} Designed a responsive, student-friendly interface with audio playback for pronunciation practice.
+  \item Built a real-time messaging app (chat, group/1:1 voice \& video calling) \textbf{end-to-end} across \textbf{Flutter + Node.js/Socket.io/ MongoDB}.
+  \item Implemented \textbf{VoIP calling with Agora RTC} + native \textbf{CallKit} integration and \textbf{PushKit} background call handling on iOS.
+  \item Designed client-side \textbf{E2E-style message encryption (RSA/AES)} via encrypt/pointycastle with keys in flutter\_secure\_stor-age and a Mongoose EC key model for key exchange.
+  \item Built an \textbf{FCM/APNs push pipeline} handling multi-device delivery, dedup, and call-vs-message routing across foreground/background/terminated states.
+  \item Integrated \textbf{AWS S3} media uploads and \textbf{Stripe} monetization alongside ad revenue (\textbf{Google Mobile Ads}: banner/interstit-ial/rewarded/native/app-open) and \textbf{in\_app\_purchase} premium tier.
+  \item Managed app-wide state across \textbf{20+ Bloc/Cubit modules} with test coverage (bloc\_test, mocktail); custom singleton Socket.IO client with auto-reconnect and \textbf{20+ typed event listeners} layered alongside Dio REST.
+  \item Offline-first \textbf{sqflite} message persistence; screenshot/recording protection; deep-linked invites; \textbf{i18n in 4 languages} (ARB); light/dark theming; shimmer loading; Play Store manifest permission auditing.
+  \item \textbf{Backend (Node.js/TypeScript):} layered domain/infrastructure architecture; Socket.io handlers for chat, calls (group-call participant tracking), typing, presence; \textbf{JWT + bcrypt + OTP email verification} (Handlebars); Firebase Admin FCM + dedicated APNs service + Mailgun/Nodemailer; \textbf{node-schedule cron} for disappearing-message auto-deletion; live \textbf{Swagger} docs; class-validator/Joi validation; \textbf{log4js} daily-rotated logging; forced-update version gating and \texttt{.well-known} universal-link endpoints.
 \end{highlights}
 
 \vspace{3pt}
 
-% --- Project 2 (The Technical Heavyweight) ---
-\textbf{AroggyaPath} $|$ \textit{Healthcare Application}
-\hfill \href{https://github.com/Yeasin84/AroggyaPath.git}
-{\textcolor{myblue}{\faGithub}}
-\href{https://docs.google.com/presentation/d/10b3HphnqcUrSLe6pjGhUV1HGRvQXor6Jl4Ls2WsCkmc/edit?usp=sharing}{\textcolor{myblue}{\faFilePowerpoint}}\\
-\textit{Comprehensive telemedicine app for appointment scheduling and records.}
+% --- Project 2: FFP Vault ---
+\textbf{FFP Vault — Financial Freedom Power} $|$ \textit{Personal Finance \& Secure Vault App}
+\hfill
+\href{https://play.google.com/store/apps/details?id=com.ffpvault.app}{\textcolor{myblue}{\faGooglePlay}}
+\href{https://github.com/H-Yeasin/assetmanagement}{\textcolor{myblue}{\faGithub}}\\
+\textit{Mature, iteratively shipped product (v6.0.0+8) on a fully serverless Firebase backend.}
 \begin{highlights}
-  \item \textbf{Clean Architecture:} Structured the codebase using Clean Architecture to ensure scalability and testability.
-  \item \textbf{Offline Capability:} Implemented \textbf{Hive} for local data caching, allowing users to view appointments without internet.
-  \item \textbf{API Integration:} Integrated REST APIs to fetch real-time health data and utilized \textbf{JSON} serialization.
-  \item \textbf{Tech Stack:} Flutter, Provider, Firebase Firestore, FCM (Push Notifications).
+  \item Built a cross-platform Flutter app (\textbf{Riverpod + go\_router, 100+ screens}, $\sim$104 Dart files, $\sim$50 routes with ShellRoute nested tabs) backed by \textbf{Firebase} (Auth, Firestore, Storage, Cloud Functions, FCM, App Check).
+  \item Designed a \textbf{custom OTP-based 2FA} and password-reset system using Cloud Functions (Node 22, ES modules), \textbf{Secrets Manager}, and Nodemailer, with \textbf{rate limiting and salted SHA-256 hashing}.
+  \item Integrated \textbf{RevenueCat subscriptions} with a \textbf{dual-sync (webhook + client) architecture} and regression guards keeping entitlement state consistent under race conditions; entitlement polling for propagation delay; restore purchases.
+  \item Implemented on-device security: \textbf{biometric auth, PIN lock, and session-timeout auto-lock} with encrypted storage (flutter\_secure\_storage + local\_auth).
+  \item Wrote \textbf{Firestore Security Rules} enforcing per-user data isolation and preventing client-side privilege escalation on billing fields.
+  \item Built a \textbf{GDPR-compliant cascading account-deletion} Cloud Function spanning Firestore, Storage, OTP records, and the Auth user.
+  \item Scheduled serverless jobs: \textbf{15-min cron} for reminder push notifications, \textbf{daily cron} for trial expiration; subscription-gated secure document \textbf{Vault} (file CRUD: upload/download/share).
+  \item Domain-specific financial logic: \textbf{loan amortization}, multi-frequency payment normalization, housing/insurance cost tracking; Hive on-device storage with code-generated adapters; Google Sign-In + Sign in with Apple.
+  \item Resolved a real \textbf{Swift Package Manager duplicate-symbol conflict} via a documented iOS Podfile pin.
+\end{highlights}
+
+\vspace{3pt}
+
+% --- Project 3: Hesteka ---
+\textbf{Hesteka (Emmafve)} $|$ \textit{Animal-Welfare Community Platform — Full-Stack, 3 Tiers}
+\hfill
+\href{https://play.google.com/store/apps/details?id=com.emmafve.app}{\textcolor{myblue}{\faGooglePlay}}
+\href{https://apps.apple.com/fr/app/hesteka/id6777662331}{\textcolor{myblue}{\faAppStore}}
+\href{https://github.com/H-Yeasin/findanimalApp}{\textcolor{myblue}{\faGithub}}\\
+\textit{Full-stack ownership: Flutter app $\leftrightarrow$ Node.js/Express/MongoDB API $\leftrightarrow$ React admin dashboard, sharing one auth, real-time, and notification infrastructure.}
+\begin{highlights}
+  \item Built and connected \textbf{all three tiers} of a live product solo: Flutter mobile, Node.js/TypeScript/Express/MongoDB API, and React admin dashboard.
+  \item Engineered a \textbf{points/rewards economy} with an automated cron-based balance-reset job and a \textbf{photo-based donation-proof verification workflow} tied to a rewards ledger.
+  \item Built \textbf{real-time community + private 1:1 chat with moderation} (report/like on messages) over \textbf{JWT-authenticated Socket.IO middleware}.
+  \item Integrated a \textbf{dual payment gateway} — Stripe (PaymentIntents, SetupIntents, saved payment methods) and PayPal (order create/capture) — both with \textbf{webhook reconciliation}, plus standalone HTML test harnesses against the live API.
+  \item Implemented \textbf{geospatial ``local missions''} using \textbf{geohashing} proximity queries, geo-fencing, Google Maps, geolocation, and geocoding.
+  \item Backend: \textbf{20 feature modules} (controller/service/route/model/validation layering), custom scaffolding code-generator (\texttt{makeModule.ts}), \textbf{Zod validation on every endpoint}, \textbf{Redis} caching + rate limiting.
+  \item Multi-provider auth: \textbf{JWT access/refresh rotation, Google OAuth, Sign in with Apple, OTP email verification}; RBAC (admin/user/partner), bcrypt, account-status gating, CORS allow-listing.
+  \item \textbf{Shopify Admin API sync} (product/collection browsing mirrored in mobile + admin); Cloudinary media storage; FCM push wired identically across backend, admin web (service worker), and mobile.
+  \item Admin: \textbf{React 18 + Vite + Tailwind v4, 18 CRUD pages} with reusable DataTable/CRUDModal/FilterBar components, \textbf{Recharts} analytics, live \textbf{Leaflet} map of geo-tagged reports, socket-driven live updates.
+  \item Built \textbf{custom FR/EN i18n twice, independently, in two paradigms} (React context vs.\ Riverpod notifier); mobile uses Riverpod code-generated providers, go\_router route guards, Clean Architecture, freezed + json\_serializable, Dio, flutter\_secure\_storage, deep linking.
+\end{highlights}
+
+\vspace{3pt}
+
+% --- Project 4: DocMobi ---
+\textbf{DocMobi (AroggyaPath)} $|$ \textit{Telehealth \& Doctor-Discovery App}
+\hfill
+\href{https://play.google.com/store/apps/details?id=com.docmobi.app}{\textcolor{myblue}{\faGooglePlay}}
+\href{https://apps.apple.com/fr/app/docmobi/id6760239548}{\textcolor{myblue}{\faAppStore}}
+\href{https://github.com/H-Yeasin/AroggyaPath}{\textcolor{myblue}{\faGithub}}\\
+\textit{Role-based (patient/doctor) telemedicine app for live consultations, appointments, and medical records.}
+\begin{highlights}
+  \item Built a real-time telehealth feature set using \textbf{Agora RTC} (live audio/video: channel management, mute, camera switch, speaker toggle) and \textbf{Socket.IO} chat + presence/call-signaling layered under the media stream.
+  \item Implemented \textbf{incoming-call push notifications} with custom high-importance Android channels and \textbf{full-screen intents} (call-screen-over-lockscreen UX).
+  \item Designed a \textbf{custom REST API client layer} (\texttt{ApiClient}) with JWT bearer auth, \textbf{automatic token refresh / 401 handling, retry/backoff}, and multipart upload, powering \textbf{7 API service modules} (auth, appointments, chat, doctors, users, dependents, uploads).
+  \item Implemented \textbf{OpenStreetMap-based doctor/hospital discovery} via flutter\_map with a \textbf{custom cached tile provider and marker factory}, geocoding, and \textbf{Haversine distance ranking}.
+  \item Built a \textbf{document pipeline} — image capture/compression before upload, plus PDF generation, printing, and in-app viewing — for medical records across Android/iOS.
+  \item FCM push across foreground/background/terminated states with \textbf{deep-linking into specific screens on tap} via a global navigator key.
+  \item Provider/ChangeNotifier architecture across \textbf{6 domain providers}; singleton services (sockets, calls, location, notifications); \textbf{role-based UI/theming} serving separate patient and doctor experiences from one codebase.
+  \item Complex healthcare workflows: appointment booking/scheduling, medical record management, dependent/family-member booking, doctor reviews, emergency contacts; \textbf{Hive} local caching for offline appointment viewing.
+\end{highlights}
+
+\vspace{3pt}
+
+% --- Project 5: SnapShip ---
+\textbf{SnapShip} $|$ \textit{AI-Powered Logistics \& Multi-Courier Dispatch Hub}
+\hfill
+\href{https://github.com/H-Yeasin/snapship}{\textcolor{myblue}{\faGithub}}\\
+\textit{E-commerce logistics app unifying three Bangladeshi courier APIs behind one dispatch interface.}
+\begin{highlights}
+  \item Architected a Flutter logistics app using \textbf{Clean Architecture and BLoC}, integrating \textbf{3 third-party courier APIs (Pathao, RedX, Steadfast)} — with heterogeneous credential schemas (OAuth-style client/secret vs.\ API keys) — behind a \textbf{unified dispatch and rate-comparison interface} (\texttt{/couriers/compare-rates}).
+  \item Built the \textbf{AI-assisted ``SnapEngine'' order-intake pipeline} parsing unstructured multilingual (\textbf{Bangla/English ``Bangalish''}) customer messages into structured shipping orders (name, phone, address, COD amount, weight) with \textbf{automated confidence scoring} (overall, address-match, match method, phone validity) and human-readable pre-dispatch warnings.
+  \item Implemented \textbf{secure merchant credential management}: encrypted local storage (flutter\_secure\_storage) plus \textbf{live ``Test Connection'' validation} against real courier auth endpoints before persisting credentials; merchant-facing per-courier \textbf{webhook management}.
+  \item Designed \textbf{functional error handling} (dartz \texttt{Either<Failure,T>}) across the data--domain--presentation boundary, eliminating unchecked exceptions in async network flows.
+  \item \textbf{5 Clean Architecture feature modules} (auth, dashboard, profile, ship\_hub, snap\_engine); \textbf{get\_it} DI with a single composition root; dedicated tracking BLoC/repository for consignment status; backwards-compatible Model$\to$Entity JSON parsing (v1 flat + v2 nested shapes).
+  \item Centralized \textbf{Dio} client (auth-token injection, logging, 401 session invalidation); \textbf{flutter\_dotenv} config; custom design system (AppTheme/AppColors/AppTypography), dark-mode-first UI, CustomPainter dashed borders, glassmorphism \texttt{GlassCard}, shimmer loading.
+\end{highlights}
+
+\vspace{3pt}
+
+% --- Project 6: Language Learning App ---
+\textbf{Language Learning App} $|$ \textit{EdTech Platform}
+\hfill \href{https://github.com/Yeasin84/Language_Learning_APP.git}{\textcolor{myblue}{\faGithub}}\\
+\textit{Interactive educational app focusing on vocabulary and grammar exercises.}
+\begin{highlights}
+  \item \textbf{Educational Logic:} Developed interactive quizzes and progress-tracking features similar to modern LMS platforms.
+  \item \textbf{State Management:} Utilized \textbf{Riverpod} to manage user sessions, quiz scores, and daily learning streaks efficiently.
+  \item \textbf{UI/UX:} Designed a responsive, student-friendly interface with audio playback for pronunciation practice.
 \end{highlights}
 
 \vspace{3pt}
@@ -125,18 +213,15 @@ Results-driven Flutter Developer with \textbf{1+ years of practical experience} 
 \begin{highlights}
   \item \textbf{SQL (Basics) Certified (HackerRank)} -- Validates strong relational database knowledge.
   \href{https://www.hackerrank.com/certificates/539f8885f96a}{\textcolor{myblue}{\faExternalLink*}}
-  \item \textbf{Postman API Fundamentals Student Expert – Postman, 2025}
+  \item \textbf{Postman API Fundamentals Student Expert -- Postman, 2025}
   \href{https://badges.parchment.com/public/assertions/fN9nswpfR1WrnmD2XuL_bQ}{\textcolor{myblue}{\faExternalLink*}}
-  
   \item \textbf{AWS Academy Graduate:} Introduction to Cloud (2025)
   \href{https://www.credly.com/badges/a7885fd8-c50d-4134-ba82-bb392fe1f139}{\textcolor{myblue}{\faExternalLink*}}
-  
   \item \textbf{CS Fundamentals With Phitron (2025)} -- Focus on C++ and Data Structures.
   \href{https://phitron.io/course-details/batch3}{\textcolor{myblue}{\faExternalLink*}}
-  
-  \item \textbf{Soft Skill: 21st Century Core Employability Skills Development Program – Wadhwani Foundation, 2023} 
+  \item \textbf{Soft Skill: 21st Century Core Employability Skills Development Program -- Wadhwani Foundation, 2023}
   \href{https://web.certificate.wfglobal.org/en/certificate?certificateId=657185118c30de8667bdadc4}{\textcolor{myblue}{\faExternalLink*}}\\
-  Achieved 90\% score in the “Competencies of Job Ready Modules” under Wadhwani Opportunity’s global workforce readiness initiative.
+  Achieved 90\% score in the ``Competencies of Job Ready Modules'' under Wadhwani Opportunity's global workforce readiness initiative.
 \end{highlights}
 
 \end{document}
