@@ -8,11 +8,13 @@ This repository contains the **LaTeX source code** for my professional resume. I
 ---
 
 ### 🚀 **Download Latest Version**
-👉 **[View & Download PDF](https://yeasin84.github.io/my-resume/Habib_Ullah_Yeasin_Resume.pdf)**
+
+👉 **[View & Download PDF](https://h-yeasin.github.io/my-resume/Habib_Ullah_Yeasin_Resume.pdf)**
 
 ---
 
 ### 🛠 **How It Works (CI/CD)**
+
 I treat my resume as software. Instead of manually exporting PDFs, I use **GitHub Actions** to automate the build process:
 
 1.  **Source:** The resume is written in LaTeX (`main.tex`).
@@ -21,10 +23,12 @@ I treat my resume as software. Instead of manually exporting PDFs, I use **GitHu
 4.  **Deploy:** The generated PDF is automatically renamed and deployed to the `pdf-hosting` branch, making it instantly available via GitHub Pages.
 
 ### 🧰 **Tech Stack**
-* **Language:** LaTeX
-* **Automation:** GitHub Actions
-* **Hosting:** GitHub Pages
-* **Editor:** Overleaf / VS Code
+
+- **Language:** LaTeX
+- **Automation:** GitHub Actions
+- **Hosting:** GitHub Pages
+- **Editor:** Overleaf / VS Code
 
 ---
-*Last Updated: (The date on the PDF is always current)*
+
+_Last Updated: (The date on the PDF is always current)_
